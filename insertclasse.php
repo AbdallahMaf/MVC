@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajouter</title>
+    <title>Gestion des Classes</title>
     <link rel="stylesheet" href="View/style.css">
 </head>
 
@@ -16,15 +16,15 @@
         //extraction des informations envoyé dans des variables par la methode POST
         extract($_POST);
         //verifier que tous les champs ont été remplis
-        if (isset($nom) && isset($prenom)) {
+        if (isset($nom)) {
             //connexion à la base de donnée
             include_once "connectdb.php";
             //requête d'ajout
-            $req = mysqli_query($con, "INSERT INTO etudiant VALUES(NULL, '$nom', '$prenom')");
+            $req = mysqli_query($con, "INSERT INTO classe VALUES(NULL, '$nom')");
             if ($req) { //si la requête a été effectuée avec succès , on fait une redirection
                 header("location: index.php");
             } else { //si non
-                $message = "Etudiant non ajouté";
+                $message = "Classe non ajouté";
             }
         } else {
             //si non
@@ -35,7 +35,7 @@
     ?>
     <div class="form">
         <a href="index.php" class="back_btn"><img src="View/images/back.png"> Retour</a>
-        <h2>Ajouter un Etudiant</h2>
+        <h2>Ajouter une classe</h2>
         <p class="erreur_message">
             <?php
             // si la variable message existe , affichons son contenu
@@ -48,10 +48,6 @@
         <form action="" method="POST">
             <label>Nom</label>
             <input type="text" name="nom">
-            <label>Prénom</label>
-            <input type="text" name="prenom">
-            <label>Classe</label>
-            <input type="text" name="age">
             <input type="submit" value="Ajouter" name="button">
         </form>
     </div>
