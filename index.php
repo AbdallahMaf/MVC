@@ -11,13 +11,14 @@
 
 <body>
     <div class="container">
-        <a href="insert.php" class="Btn_add"> <img src="View/images/plus.png"> Ajouter</a>
+        <a href="insert.php" class="Btn_add"> <img src="View/images/plus.png"> Ajouter Etudiant</a>
+        <a href="insert.php" class="Btn_add"> <img src="View/images/plus.png"> Les Classes</a>
 
         <table>
             <tr id="items">
                 <th>Nom</th>
                 <th>Prénom</th>
-                <th>Classe</th>
+                <!-- <th>Classe</th> -->
                 <th>Modifier</th>
                 <th>Supprimer</th>
             </tr>
@@ -36,7 +37,7 @@
                     <tr>
                         <td><?= $row['nom'] ?></td>
                         <td><?= $row['prenom'] ?></td>
-                        <td><?= $row['classe'] ?></td>
+
                         <!--Nous alons mettre l'id de chaque etudiants dans ce lien -->
                         <td><a href="modifier.php?id=<?= $row['id'] ?>"><img src="View/images/pen.png"></a></td>
                         <td><a href="supprimer.php?id=<?= $row['id'] ?>"><img src="View/images/trash.png"></a></td>
