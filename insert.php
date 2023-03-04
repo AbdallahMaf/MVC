@@ -51,7 +51,7 @@
             <label>Prénom</label>
             <input type="text" name="prenom">
             <label>Classe</label>
-            <input type="text" name="age">
+            <input type="text" name="classse" disabled>
             <input type="submit" value="Ajouter" name="button">
         </form>
     </div>
