@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <a href="ajouter.php" class="Btn_add"> <img src="images/plus.png"> Ajouter</a>
+        <a href="ajouter.php" class="Btn_add"> <img src="View/images/plus.png"> Ajouter</a>
 
         <table>
             <tr id="items">
@@ -36,10 +36,10 @@
                     <tr>
                         <td><?= $row['nom'] ?></td>
                         <td><?= $row['prenom'] ?></td>
-                        <td><?= $row['age'] ?></td>
+                        <td><?= $row['classe'] ?></td>
                         <!--Nous alons mettre l'id de chaque etudiants dans ce lien -->
-                        <td><a href="modifier.php?id=<?= $row['id'] ?>"><img src="images/pen.png"></a></td>
-                        <td><a href="supprimer.php?id=<?= $row['id'] ?>"><img src="images/trash.png"></a></td>
+                        <td><a href="modifier.php?id=<?= $row['id'] ?>"><img src="View/images/pen.png"></a></td>
+                        <td><a href="supprimer.php?id=<?= $row['id'] ?>"><img src="View/images/trash.png"></a></td>
                     </tr>
             <?php
                 }
