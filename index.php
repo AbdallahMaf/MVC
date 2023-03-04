@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion Employés</title>
+    <title>Gestion des Etudiants</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +17,7 @@
             <tr id="items">
                 <th>Nom</th>
                 <th>Prénom</th>
-                <th>Age</th>
+                <th>Classe</th>
                 <th>Modifier</th>
                 <th>Supprimer</th>
             </tr>
