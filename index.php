@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Etudiants</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="View/style.css">
 </head>
 
 <body>
@@ -23,9 +23,9 @@
             </tr>
             <?php
             //inclure la page de connexion
-            include_once "connexion.php";
+            include_once "connectdb.php";
             //requête pour afficher la liste des etudiants
-            $req = mysqli_query($con, "SELECT * FROM Employe");
+            $req = mysqli_query($con, "SELECT * FROM etudiant");
             if (mysqli_num_rows($req) == 0) {
                 //s'il n'existe pas d'employé dans la base de donné , alors on affiche ce message :
                 echo "Il n'y a pas encore d'etudiants ajouter !";
