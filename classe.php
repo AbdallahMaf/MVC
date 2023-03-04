@@ -12,11 +12,12 @@
 <body>
     <div class="container">
         <a href="insert.php" class="Btn_add"> <img src="View/images/plus.png"> Ajouter Etudiant</a>
-        <a href="insertclasse.php" class="Btn_add"> <img src="View/images/plus.png"> Gestion des Classes</a>
+        <a href="insertclasse.php" class="Btn_add"> <img src="View/images/plus.png">Ajouter une Classe</a>
 
         <table>
             <tr id="items">
                 <th>Classe</th>
+                <th>Nombre d'etudiant</th>
                 <th>Modifier</th>
                 <th>Supprimer</th>
             </tr>
@@ -34,6 +35,7 @@
             ?>
                     <tr>
                         <td><?= $row['nom'] ?></td>
+                        <td></td>
 
 
                         <!--Nous alons mettre l'id de chaque etudiants dans ce lien -->
