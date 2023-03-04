@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <a href="ajouter.php" class="Btn_add"> <img src="View/images/plus.png"> Ajouter</a>
+        <a href="insert.php" class="Btn_add"> <img src="View/images/plus.png"> Ajouter</a>
 
         <table>
             <tr id="items">
