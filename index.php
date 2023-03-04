@@ -40,7 +40,7 @@
 
                         <!--Nous alons mettre l'id de chaque etudiants dans ce lien -->
                         <td><a href="modifier.php?id=<?= $row['id'] ?>"><img src="View/images/pen.png"></a></td>
-                        <td><a href="supprimer.php?id=<?= $row['id'] ?>"><img src="View/images/trash.png"></a></td>
+                        <td><a href="delete.php?id=<?= $row['id'] ?>"><img src="View/images/trash.png"></a></td>
                     </tr>
             <?php
                 }
