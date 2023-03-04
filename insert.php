@@ -16,11 +16,11 @@
         //extraction des informations envoyé dans des variables par la methode POST
         extract($_POST);
         //verifier que tous les champs ont été remplis
-        if (isset($nom) && isset($prenom) && $classe) {
+        if (isset($nom) && isset($prenom)) {
             //connexion à la base de donnée
             include_once "connectdb.php";
             //requête d'ajout
-            $req = mysqli_query($con, "INSERT INTO Employe VALUES(NULL, '$nom', '$prenom','$classe')");
+            $req = mysqli_query($con, "INSERT INTO etudiant VALUES(NULL, '$nom', '$prenom')");
             if ($req) { //si la requête a été effectuée avec succès , on fait une redirection
                 header("location: index.php");
             } else { //si non
