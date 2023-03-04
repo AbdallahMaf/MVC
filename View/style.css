@@ -19,7 +19,7 @@ body {
 .Btn_add {
     width: fit-content;
     margin-bottom: 20px;
-    background-color: #2bc48a;
+    background-color: #1d2572;
     padding: 5px 20px;
     color: #fff;
     display: flex;
@@ -84,7 +84,7 @@ tr:nth-child(2n) td {
 }
 
 .back_btn {
-    color: #2bc48a;
+    color: #1d2572;
     text-decoration: 0;
     display: flex;
     align-items: center;
@@ -124,8 +124,8 @@ input:focus {
 
 input[type="submit"] {
     margin-top: 25px;
-    background-color: #2bc48a;
-    border: 1px solid #2bc48a;
+    background-color: #1d2572;
+    border: 1px solid #1d2572;
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
