@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  sam. 04 mars 2023 à 12:26
+-- Généré le :  sam. 04 mars 2023 à 16:00
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -33,7 +33,18 @@ CREATE TABLE IF NOT EXISTS `classe` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `classe`
+--
+
+INSERT INTO `classe` (`id`, `nom`) VALUES
+(3, 'DITI4'),
+(9, 'DITI3'),
+(8, 'DITI5'),
+(7, 'L3 GL'),
+(10, 'MIAGE');
 
 -- --------------------------------------------------------
 
@@ -46,10 +57,17 @@ CREATE TABLE IF NOT EXISTS `etudiant` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
-  `classe` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_classe` (`classe`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `etudiant`
+--
+
+INSERT INTO `etudiant` (`id`, `nom`, `prenom`) VALUES
+(17, 'MAF', 'Mohamed'),
+(16, 'Ndaw', 'RAPHAEL'),
+(14, 'Fall', 'Mohamed Abdallah');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
