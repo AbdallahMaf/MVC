@@ -18,7 +18,7 @@
             <tr id="items">
                 <th>Nom</th>
                 <th>Prénom</th>
-                <!-- <th>Classe</th> -->
+                <th>Classe</th>
                 <th>Modifier</th>
                 <th>Supprimer</th>
             </tr>
@@ -37,6 +37,7 @@
                     <tr>
                         <td><?= $row['nom'] ?></td>
                         <td><?= $row['prenom'] ?></td>
+                        <td></td>
 
                         <!--Nous alons mettre l'id de chaque etudiants dans ce lien -->
                         <td><a href="update.php?id=<?= $row['id'] ?>"><img src="View/images/pen.png"></a></td>
