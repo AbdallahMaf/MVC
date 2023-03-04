@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <a href="insert.php" class="Btn_add"> <img src="View/images/plus.png"> Ajouter Etudiant</a>
-        <a href="insertclasse.php" class="Btn_add"> <img src="View/images/plus.png"> Gestion des Classes</a>
+        <a href="classe.php" class="Btn_add"> <img src="View/images/plus.png"> Liste des Classes</a>
 
         <table>
             <tr id="items">

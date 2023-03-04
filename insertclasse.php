@@ -22,7 +22,7 @@
             //requête d'ajout
             $req = mysqli_query($con, "INSERT INTO classe VALUES(NULL, '$nom')");
             if ($req) { //si la requête a été effectuée avec succès , on fait une redirection
-                header("location: index.php");
+                header("location: classe.php");
             } else { //si non
                 $message = "Classe non ajouté";
             }
@@ -34,7 +34,7 @@
 
     ?>
     <div class="form">
-        <a href="index.php" class="back_btn"><img src="View/images/back.png"> Retour</a>
+        <a href="classe.php" class="back_btn"><img src="View/images/back.png"> Retour</a>
         <h2>Ajouter une classe</h2>
         <p class="erreur_message">
             <?php
