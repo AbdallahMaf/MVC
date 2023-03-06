@@ -39,8 +39,8 @@
 
 
                         <!--Nous alons mettre l'id de chaque etudiants dans ce lien -->
-                        <td><a href="update.php?id=<?= $row['id'] ?>"><img src="View/images/pen.png"></a></td>
-                        <td><a href="delete.php?id=<?= $row['id'] ?>"><img src="View/images/trash.webp"></a></td>
+                        <td><a href=""><img src="View/images/pen.png"></a></td>
+                        <td><a href=""><img src="View/images/trash.webp"></a></td>
                     </tr>
             <?php
                 }
