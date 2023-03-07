@@ -34,7 +34,7 @@
 
     ?>
     <div class="form">
-        <a href="index.php" class="back_btn"><img src="View/images/back.png"> Retour</a>
+        <a href="index.php" class="back_btn"><img src="View/images/back.webp"> Retour</a>
         <h2>Ajouter un Etudiant</h2>
         <p class="erreur_message">
             <?php

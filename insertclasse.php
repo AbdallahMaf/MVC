@@ -34,7 +34,7 @@
 
     ?>
     <div class="form">
-        <a href="classe.php" class="back_btn"><img src="View/images/back.png"> Retour</a>
+        <a href="classe.php" class="back_btn"><img src="View/images/back.webp"> Retour</a>
         <h2>Ajouter une classe</h2>
         <p class="erreur_message">
             <?php
